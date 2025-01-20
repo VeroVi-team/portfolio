@@ -331,9 +331,39 @@
         .about-content {
             max-width: 800px;
             margin: 0 auto;
-            font-size: 1.2rem;
-            line-height: 1.8;
-            text-align: justify;
+            text-align: center;
+            color: var(--light);
+        }
+
+        .about-stats {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, min-max(200px, 1fr));
+            gap: 2rem;
+            margin-top: 2rem;
+        }
+
+        .stat-item {
+            background: var(--primary);
+            padding: 2rem;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+            transition: transform 0.3s ease;
+        }
+
+        .stat-item:hover {
+            transform: translateY(-10px);
+        }
+
+        .stat-number {
+            font-size: 1.5rem;
+            margin-bottom: 0.5rem;
+            /* color: var(--accent); */
+            color: goldenrod;
+        }
+
+        .stat-label {
+            font-size: 1rem;
+            color: var(--light);
         }
 
         .quote-section {
@@ -356,13 +386,6 @@
             text-transform: uppercase;
             letter-spacing: 0.1em;
         }
-
-
-
-
-
-
-
 
         /* Update project section styles */
         .project-container {
@@ -852,29 +875,52 @@
                 <h3>98%</h3>
                 <p>Accuracy Rate</p>
             </div>
-            <div class="stat-card">
-                <h3>50+</h3>
+            <!-- <div class="stat-card">
+                <h1>Updating Soon...</h1>
                 <p>Enterprise Clients</p>
-            </div>
+            </div> -->
             <div class="stat-card">
                 <h3>24/7</h3>
                 <p>Technical Support</p>
             </div>
             <div class="stat-card">
-                <h3>15+</h3>
-                <p>Patents Filed</p>
+                <h3>5+</h3>
+                <p>Research Published</p>
             </div>
         </div>
     </section>
 
     <section id="about" class="section">
         <h2 class="section-title">About Us</h2>
-        <p style="text-align: center; max-width: 800px; margin: 0 auto;">
-            VeroVi is at the forefront of machine vision technology, pioneering innovative solutions that bridge the gap
-            between artificial intelligence and real-world applications. Our team of experts combines decades of
-            experience in computer vision, drone technology, and artificial intelligence to deliver cutting-edge
-            solutions that transform industries.
-        </p>
+        <div class="about-content">
+            <!-- Original About Section Content -->
+            <!-- <p>Our startup is dedicated to transforming innovative ideas into reality. We are a team of passionate professionals committed to driving change and achieving visionary goals.</p> -->
+            <p style="text-align: center; max-width: 800px; margin: 0 auto;">
+                VeroVi is at the forefront of machine vision technology, pioneering innovative solutions that bridge the gap
+                between artificial intelligence and real-world applications. Our team of experts combines decades of
+                experience in computer vision, drone technology, and artificial intelligence to deliver cutting-edge
+                solutions that transform industries.
+            </p>
+            <!-- New Content -->
+            <div class="about-stats">
+                <div class="stat-item">
+                    <h3 class="stat-number">Innovative Ideas</h3>
+                    <p class="stat-label">Driving Change</p>
+                </div>
+                <div class="stat-item">
+                    <h3 class="stat-number">Team of Experts</h3>
+                    <p class="stat-label">Dedicated Professionals</p>
+                </div>
+                <div class="stat-item">
+                    <h3 class="stat-number">Visionary Goals</h3>
+                    <p class="stat-label">Future-Focused</p>
+                </div>
+                <div class="stat-item">
+                    <h3 class="stat-number">Open for Collaboration</h3>
+                    <p class="stat-label">Join Us</p>
+                </div>
+            </div>
+        </div>
     </section>
 
     <section id="team" class="section">
@@ -883,7 +929,7 @@
             <div class="team-member">
                 <img src="https://media.licdn.com/dms/image/v2/D4D03AQHCeE5pn18LCg/profile-displayphoto-shrink_800_800/profile-displayphoto-shrink_800_800/0/1718301870280?e=1742428800&v=beta&t=0UAQdX1Jz41oMDASkpAtILN5yNzxaTBtfilBiEeyUB8"
                     alt="Team Member">
-                <h3>Charulkumar</h3>
+                <h3>Charulkumar Chodvadiya</h3>
                 <p>Founder</p>
             </div>
             <div class="team-member">
@@ -892,6 +938,18 @@
                 <h3>Kinkshuk Gaurav</h3>
                 <p>Founder</p>
             </div>
+            <!-- <div class="team-member">
+                <img src=""
+                    alt="Team Member">
+                <h3>Other</h3>
+                <p>Other</p>
+            </div>
+            <div class="team-member">
+                <img src=""
+                    alt="Team Member">
+                <h3>Other</h3>
+                <p>Other</p>
+            </div> -->
         </div>
     </section>
 
@@ -903,14 +961,14 @@
                     <i class="fas fa-envelope"></i>
                 </div>
                 <h3>Email</h3>
-                <p><a href="mailto:info@verovi.com">info@verovi.com</a></p>
+                <p><a href="mailto:teamverovi@gmail.com">teamverovi@gmail.com</a></p>
             </div>
             <div class="contact-card">
                 <div class="contact-icon">
                     <i class="fas fa-phone"></i>
                 </div>
                 <h3>Phone</h3>
-                <p><a href="tel:+1234567890">+1 (234) 567-890</a></p>
+                <p><a href="tel:+1234567890">Coming Soon...</a></p>
             </div>
             <div class="contact-card">
                 <div class="contact-icon">
@@ -921,10 +979,10 @@
             </div>
             <div class="contact-card">
                 <div class="contact-icon">
-                    <i class="fab fa-twitter"></i>
+                    <i class="fab fa-instagram"></i>
                 </div>
-                <h3>Twitter</h3>
-                <p><a href="https://twitter.com/verovi" target="_blank">@verovi</a></p>
+                <h3>Instagram</h3>
+                <p><a href="https://instagram.com/VeroVi_official" target="_blank">@VeroVi_official</a></p>
             </div>
         </div>
     </section>
